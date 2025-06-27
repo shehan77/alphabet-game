@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>words Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="shehan">
+        <h1>🎯 Word Finding Game</h1>
+        
+        <div class="word-display" id="wordDisplay"></div>
+        
+        <div class="stats">
+            <div class="stat-item">
+                <div>Wrong Guesses</div>
+                <div id="wrongCount">0</div>
+            </div>
+            <div class="stat-item">
+                <div>Remaining</div>
+                <div id="remainingCount">6</div>
+            </div>
+            <div class="stat-item best-score">
+                <div>Best Score</div>
+                <div id="bestScore">0</div>
+            </div>
+        </div>
+        
+        <div class="category-selector">
+            <label for="categorySelect">Choose Category:</label>
+            <select id="categorySelect" onchange="changeCategory()">
+                <option value="random">🎲 Random (All Categories)</option>
+                <option value="animals">🦁 Animals</option>
+                <option value="technology">💻 Technology</option>
+                <option value="nature">🌿 Nature</option>
+                <option value="emotions">😊 Emotions</option>
+                <option value="food">🍕 Food</option>
+                <option value="colors">🎨 Colors</option>
+                <option value="sports">⚽ Sports</option>
+                <option value="music">🎵 Music</option>
+            </select>
+        </div>
+        
+        <div class="alphabet-grid" id="alphabetGrid"></div>
+        
+        <div class="message" id="message">Guess a letter to start!</div>
+        
+        <button class="new-game-btn" onclick="newGame()">New Game</button>
+    </div>
+
+   
+</body>
+</html>
